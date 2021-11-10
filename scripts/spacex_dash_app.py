@@ -14,7 +14,7 @@ import sys
 # current working directory
 cwd = os.path.dirname(__file__)
 
-spacex_df = pd.read_csv(cwd + "\spacex_launch_dash.csv")
+spacex_df = pd.read_csv(cwd + "\..\datasets\spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
 
